@@ -19,7 +19,7 @@ import com.patient.services.PatientServices;
 public class PatientController {
 	@Autowired
 	PatientServices patientServices;
-	
+
 	@GetMapping(value="/patients")
 	public List<Patient> getPatient() {
 		return patientServices.getPatient();
